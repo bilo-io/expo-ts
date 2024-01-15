@@ -1,5 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Alert, StyleSheet, Text, View } from 'react-native';
+
+import Button from './src/components/Core/Button';
 
 export default function App() {
   return (
@@ -7,6 +9,9 @@ export default function App() {
       <Text>Testing EXPO with React Native</Text>
       <Text>Conversion to Typescript</Text>
       <StatusBar style="auto" />
+      <Button onPress={() => Alert.alert('helloooooo')}>
+        <Text>Hello World</Text>
+      </Button>
     </View>
   );
 }
